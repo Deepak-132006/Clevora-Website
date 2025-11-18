@@ -1,0 +1,280 @@
+/* Font & Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter Tight', sans-serif;
+  background: #f9f9fb;
+  color: #420001;
+}
+
+/* Layout */
+.dashboard-container {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 250px;
+  background: #fff;
+  border-right: 1px solid #e5e5e5;
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  margin-bottom: 2rem;
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #B67E7D;
+}
+
+.brand h2 {
+  font-weight: 600;
+  color: #420001;
+}
+
+.menu a {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  padding: 0.8rem 1rem;
+  margin: 0.3rem 0;
+  border-radius: 8px;
+  color: #640000;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.menu a:hover,
+.menu a.active {
+  background: #B67E7D;
+  color: #fff;
+}
+
+/* Main Content */
+.main-content {
+  flex: 1;
+  padding: 2rem;
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  background: #fff;
+  padding: 0.6rem 1rem;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+.search-box input {
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 0.95rem;
+}
+
+.profile img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid #B67E7D;
+  
+}
+
+/* Stats Cards */
+.stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 1.2rem 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+}
+
+.card i {
+  font-size: 1.8rem;
+  color: #B67E7D;
+}
+
+.card h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #420001;
+}
+
+.card p {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #640000;
+}
+/* Cleaner Call Management */
+.chart-header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 1rem;
+}
+
+.chart-header-top h2 {
+  color: #420001;
+  font-weight: 600;
+}
+
+.date-label {
+  font-size: 0.9rem;
+  color: #640000;
+  opacity: 0.7;
+}
+
+.chart-placeholder {
+  padding-bottom: 1.5rem;
+}
+
+.chart-bars {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  height: 200px;
+  gap: 0.9rem;
+}
+
+.bar {
+  flex: 1;
+  background: linear-gradient(180deg, #B67E7D 0%, #e8c4c4 100%);
+  border-radius: 6px;
+  position: relative;
+  animation: fadeInUp 1.2s ease both;
+  transition: all 0.3s;
+}
+
+.bar:hover {
+  opacity: 0.95;
+  transform: translateY(-5px);
+}
+
+.bar span {
+  position: absolute;
+  bottom: -22px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 0.8rem;
+  color: #640000;
+  opacity: 0.8;
+}
+
+.chart-legend {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+  padding-top: 1.8rem;
+  /* border-top: 1px solid #eee; */
+  font-size: 0.9rem;
+  color: #420001;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.dot.answered { background: #B67E7D; }
+.dot.missed { background: #E88C8B; }
+.dot.response { background: #640000; }
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Realtime Section */
+.realtime {
+  background: #fff;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.realtime h2 {
+  margin-bottom: 1rem;
+  color: #420001;
+}
+
+.realtime-cards {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.mini-card {
+  flex: 1;
+  background: #f3f3f3;
+  border-radius: 8px;
+  padding: 1rem;
+  text-align: center;
+}
+
+.mini-card h3 {
+  font-size: 1rem;
+  color: #420001;
+}
+
+.mini-card p {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #640000;
+}
+.logo-clevora{
+    width: 45px;
+    height: 40px;
+    margin-top: 0px;
+
+}
