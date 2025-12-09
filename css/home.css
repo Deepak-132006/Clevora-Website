@@ -393,7 +393,7 @@
 }
 
 .home-title {
-  width: clamp(28%, 28vw, 80%);
+  width: 24rem;
   height: 2.6rem;
   padding-left: 0.1rem;
   padding-right: 0.6rem;
@@ -479,8 +479,7 @@
 
 @media (max-width: 768px) {
   .home-title {
-    width: 80%;
-    height: auto;
+    width: 24rem;
     padding-left: 0.1rem;
     padding-right: 0.6rem;
     padding: -0.67rem 0px;
@@ -625,7 +624,6 @@
   }
 }
 
-/* === FINAL FIX: Background image only in hero, not fixed === */
 .home-container {
   position: relative;
   overflow: hidden;
@@ -650,14 +648,12 @@
   filter: brightness(0.8);
 }
 
-/* Ensure content is above background */
 .home-body,
 .navbar {
   position: relative;
   z-index: 10;
 }
 
-/* Keep navbar on top of everything */
 .navbar {
   z-index: 9999 !important;
   position: relative !important;
@@ -673,4 +669,3 @@
     z-index: 9999 !important;
   }
 }
-
