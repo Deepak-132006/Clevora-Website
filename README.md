@@ -30,10 +30,6 @@
 
 ![Desktop](output/Zenithx-Desktop.png)
 
-![Mobile](output/Zenithx-Mobile.png)
-
-![Tablet](output/Zenithx-Tab.png)
-
 ---
 
 ## Installation / Usage
