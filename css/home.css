@@ -4,9 +4,9 @@
   --tertiary-color: #420001;
   --text-color: #040b15;
 }
-*{
+/* *{
     scroll-behavior: auto;
-}
+} */
 .nav-container {
   display: flex;
   /* align-content: center; */
@@ -686,4 +686,19 @@
   .nav-links {
     z-index: 9999 !important;
   }
+}
+
+.fade-in,
+.fade-left,
+.fade-right,
+.fade-up,
+.fade-zoom {
+  position: relative;
+  z-index: 1;
+}
+
+
+section.fade-in,
+div.fade-in {
+  min-height: fit-content;
 }
