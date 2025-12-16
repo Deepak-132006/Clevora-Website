@@ -15,10 +15,11 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  max-width: 1100px;
 }
 
 .footer-line {
-  width: 90%;
+  width: 80%;
   height: 0.2px;
   background-color: rgba(186, 180, 180, 0.7);
   margin: 0px auto;
@@ -68,7 +69,6 @@ input:focus {
         text-align: left;
     }
     .social-profiles{
-        margin-right: 4rem;
         gap: 2rem;
         margin-bottom: 1rem;
     }

@@ -1,6 +1,9 @@
 * {
   font-family: "Inter Tight", sans-serif;
 }
+html {
+  scroll-behavior: smooth;
+}
 
 :root {
   --light-color: #b67e7d;
@@ -81,7 +84,7 @@ img{
     padding-left: 20px;
     color: var(--secondary-color);
   }
- button {
+ .join {
     width: 8.5rem;
     height: 3.3rem;
     padding: 0.5rem;
